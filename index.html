@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
-    <title>Ujjwal Kumar | Data Scientist & AI/ML Engineer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjwal Kumar | Data Scientist & AI/ML Engineer</title>
     <meta name="title" content="Ujjwal Kumar - Data Scientist & AI/ML Engineer" />
     <meta name="description" content="Specialized in Data Science and Machine Learning." />
     <meta name="keywords" content="Ujjwal Kumar, AI/ML Developer, Data Science, Machine Learning, Portfolio" />
@@ -14,232 +14,601 @@
     <meta property="og:title" content="Ujjwal Kumar - Data Scientist & AI/ML Engineer" />
     <meta property="og:description" content="Specialized in Data Science and Machine Learning." />
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/164533721?v=4" />
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/164533721?v=4"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/164533721?v=4"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --card-bg: #111111;
+            --border-color: #262626;
+            --border-hover: #555555;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --accent-white: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -0.01em;
+            line-height: 1.6;
+        }
+
+        /* Typography Refinements */
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--accent-white);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .text-muted {
+            color: var(--text-secondary) !important;
+        }
+
+        /* Custom Section Titles */
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent-white);
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: rgba(10, 10, 10, 0.85) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: -0.03em;
+            color: var(--accent-white) !important;
+        }
+
+        .nav-link {
+            color: var(--text-secondary) !important;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--accent-white) !important;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 2px;
+            left: 50%;
+            background-color: var(--accent-white);
+            transition: all 0.25s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        /* Minimalist Cards */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Badge Styling */
+        .badge-monochrome {
+            background-color: transparent;
+            color: var(--accent-white);
+            border: 1px solid var(--border-color);
+            font-weight: 500;
+            font-size: 0.8rem;
+            padding: 0.4em 0.8em;
+            border-radius: 20px;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 30px;
+            border: 1px solid var(--border-color);
+            background: rgba(255, 255, 255, 0.03);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--accent-white);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.4; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.1); }
+            100% { opacity: 0.4; transform: scale(0.9); }
+        }
+
+        /* Profile Image Frame */
+        .profile-img-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-img {
+            width: 18rem;
+            height: 18rem;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--border-color);
+            padding: 8px;
+            background-color: var(--card-bg);
+            transition: border-color 0.3s ease;
+        }
+
+        .profile-img-container:hover .profile-img {
+            border-color: var(--accent-white);
+        }
+
+        /* Typing Effect Styling */
+        #typed-text {
+            color: var(--accent-white);
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            border-right: 3px solid var(--accent-white);
+            padding-right: 4px;
+            animation: blink-cursor 0.75s step-end infinite;
+        }
+
+        @keyframes blink-cursor {
+            from, to { border-color: transparent }
+            50% { border-color: var(--accent-white); }
+        }
+
+        /* Skills Tags */
+        .skill-tag {
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: #d1d1d1;
+            border: 1px solid #2a2a2a;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 6px;
+            margin-bottom: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            background-color: #222222;
+            color: var(--accent-white);
+            border-color: var(--border-hover);
+        }
+
+        /* Custom Monochrome Buttons */
+        .btn-mono {
+            background-color: var(--accent-white);
+            color: #000000;
+            border: 1px solid var(--accent-white);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 8px 18px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-mono:hover {
+            background-color: #e0e0e0;
+            color: #000000;
+            border-color: #e0e0e0;
+            transform: translateY(-1px);
+        }
+
+        .btn-mono-outline {
+            background-color: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 8px 18px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-mono-outline:hover {
+            background-color: #1a1a1a;
+            color: var(--accent-white);
+            border-color: var(--accent-white);
+            transform: translateY(-1px);
+        }
+
+        /* List Items styling */
+        .experience-list {
+            padding-left: 1.2rem;
+            margin-bottom: 0;
+        }
+
+        .experience-list li {
+            margin-bottom: 0.6rem;
+            color: var(--text-secondary);
+            font-size: 0.92rem;
+        }
+
+        .experience-list li::marker {
+            color: var(--accent-white);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-color);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #404040;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <a class="navbar-brand px-3">Ujjwal Kumar</a>
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ujjwal Kumar</a>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-0 shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars fs-4"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://linkedin.com/in/ujjwalkumar14b">LinkedIn</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://github.com/ujjwalkumar14b">GitHub</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="https://leetcode.com/u/ujjwalkumar14b">LeetCode</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="mailto:ujjwalkumar14b@gmail.com">Email</a></li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievement">Achievements</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0 d-flex gap-3 align-items-center">
+                        <a class="text-white opacity-75 opacity-100-hover" href="https://linkedin.com/in/ujjwalkumar14b" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fs-5"></i></a>
+                        <a class="text-white opacity-75 opacity-100-hover" href="https://github.com/ujjwalkumar14b" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github fs-5"></i></a>
+                        <a class="text-white opacity-75 opacity-100-hover" href="https://leetcode.com/u/ujjwalkumar14b" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code fs-5"></i></a>
+                        <a class="text-white opacity-75 opacity-100-hover" href="mailto:ujjwalkumar14b@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope fs-5"></i></a>
+                    </li>
                 </ul>
             </div> 
-        </nav>
-
-        <div id="hero" class="mt-5 mb-5">
-            <div class="row">
-                <div class="col-lg-7">
-                    <span class="border border-secondary rounded-pill p-2">Available for Data Science Roles</span>
-                    <h1 class="mt-3">Hi, I'm Ujjwal Kumar</h1>
-                    <h3 class="mt-3">I am a <span id="typed-text"></span></h3>
-                    <p class="mt-5 text-muted">Computer Science Engineer passionate about building scalable full-stack applications, machine learning pipelines, and algorithmic solutions with proven technical expertise.</p>
-
-                </div>
-                <div class="col-lg-5 text-center">
-                    <img src="https://avatars.githubusercontent.com/u/164533721?v=4" alt="Ujjwal Kumar" style="height: 20rem; width: 20rem; border-radius: 50%;"/>
-                </div>
-            </div>
         </div>
+    </nav>
 
-        <div id="about" class="mt-5 mb-5">
-            <h3 class="text-center mb-5">About Me</h3>
-
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <h5>Data Science & ML Enthusiast</h5>
-                    <p class="text-muted">I am currently pursuing my Bachelor of Technology in Computer Science & Engineering at Meerut Institute of Engineering and Technology. With a solid foundation in Python, Data Structures and Algorithms, Data Science, and Machine Learning, I thrive on building end-to-end applications that solve real-world problems.</p>
-                    <p class="text-muted">My experience spans engineering high-throughput web applications, optimizing time-series forecasting models, and implementing machine learning algorithms for predictive analysis and personalization.</p>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="card p-3 mt-2">
-                        <div class="d-flex">
-                            <span>B.Tech in Computer Science & Engineering</span>
-                            <span class="badge text-bg-light ms-auto">Aug 2023 - Jun 2027</span>
-                        </div>
-                        <div>Meerut Institute of Engineering and Technology</div>
+    <div class="container my-5 py-lg-5">
+        <div id="hero" class="py-4">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="status-badge mb-4">
+                        <span class="status-dot"></span> Available for Data Science Roles
                     </div>
-
-                    <div class="card p-3 mt-3">
-                        <div class="d-flex">
-                            <span>Senior Secondary Education in PCM</span>
-                            <span class="badge text-bg-light ms-auto">Mar 2021 - Jun 2023</span>
-                        </div>
-                        <div>Army Public School (APS), Meerut</div>
+                    <h1 class="display-4 fw-bold mb-3">Hi, I'm Ujjwal Kumar</h1>
+                    <h3 class="h2 mb-4 text-secondary fw-normal">I am a <span id="typed-text"></span></h3>
+                    <p class="lead text-muted mb-4 pe-lg-4">
+                        Computer Science Engineer passionate about building scalable full-stack applications, machine learning pipelines, and algorithmic solutions with proven technical expertise.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="mailto:ujjwalkumar14b@gmail.com" class="btn-mono"><i class="fa-regular fa-paper-plane"></i> Get in Touch</a>
+                        <a href="https://github.com/ujjwalkumar14b" target="_blank" class="btn-mono-outline"><i class="fa-brands fa-github"></i> View GitHub</a>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-
-        <div id="skills" class="mt-5 mb-5">
-            <h3 class="text-center mb-5">Technical Skills</h3>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="card p-3 mb-3">
-                        <h5>Languages</h5>
-                        <span>Python</span>
-                        <span>Java</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card p-3 mb-3">
-                        <h5>Development</h5>
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>Bootstrap</span>
-                        <span>React.js</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card p-3 mb-3">
-                        <h5>Data Science</h5>
-                        <span>NumPy</span>
-                        <span>Pandas</span>
-                        <span>Matplotlib</span>
-                        <span>Seaborn</span>
-                        <span>Scikit-Learn</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card p-3">
-                        <h5>Tools & DevOps</h5>
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>Jupyter</span>
-                        <span>VS Code</span>
+                <div class="col-lg-5 order-1 order-lg-2 text-center">
+                    <div class="profile-img-container">
+                        <img src="https://avatars.githubusercontent.com/u/164533721?v=4" alt="Ujjwal Kumar" class="profile-img" />
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="experience" class="mt-5 mb-5">
-            <h3 class="text-center mb-5">Work Experience</h3>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card p-3 mb-3">
-                        <div class="card-title d-flex">
-                            <span>AI-ML Intern, Codomax Digital Solutions</span>
-                            <span class="badge text-bg-light ms-auto">Jul 2026 – Aug 2026</span>
-                        </div>
-                        <div>
-                            <ul class="text-muted">
-                                <li>Engineered an end-to-end Time Series Forecasting pipeline for 80 quarterly power-consumption observations (2001–2020) utilizing Python, Pandas, and Statsmodels, generating 8-quarter out-of-sample forecasts to support energy-demand prediction.</li>
-                                <li>Performed extensive time-series EDA, rolling-window analysis, seasonal decomposition, and ADF stationarity testing (p=0.9986).</li>
-                                <li>Implemented Holt-Winters Exponential Smoothing with additive trend and quarterly seasonality to optimize prediction metrics.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="card p-3 mb-3">
-                        <div class="card-title d-flex">
-                            <span>Data Science Intern, AISECT LEARN</span>
-                            <span class="badge text-bg-light ms-auto">Nov 2025 – Jan 2026</span>
-                        </div>
-                        <div>
-                            <ul class="text-muted">
-                                <li>Identified user segment dynamics by clustering users into 4 distinct behavioral groups using unsupervised K-Means Clustering.</li>
-                                <li>Identified a 59.1% churn rate in the High-Risk Spenders segment by developing supervised predictive models using Logistic Regression.</li>
-                                <li>Delivered actionable behavioral insights for business strategies to increase user retention.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="card p-3">
-                        <div class="card-title d-flex">
-                            <span>Full Stack Developer Intern, EduSkills Foundation</span>
-                            <span class="badge text-bg-light ms-auto">Oct 2024 – Dec 2024</span>
-                        </div>
-                        <div>
-                            <ul class="text-muted">
-                                <li>Engineered scalable full-stack web applications supporting dynamic user interactions and seamless data persistence by developing RESTful APIs using Python (Flask/Django) and establishing optimized relational schemas in MySQL.</li>
-                                <li>Strengthened application security and identity management by building a robust authentication system featuring secure password hashing, session control, and user access validation.</li>
-                                <li>Streamlined administrative data operations by constructing an interactive student management system featuring full CRUD capability.</li>
-                                <li>Accelerated product delivery and multi-device usability by designing responsive user interfaces with Bootstrap, HTML5, and CSS3.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div id="about" class="pt-5 mt-5">
+            <div class="text-center">
+                <h2 class="section-title">About Me</h2>
             </div>
-        </div>
 
-        <div id="projects" class="mt-5 mb-5">
-            <h3 class="text-center mb-5">Featured Projects</h3>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card p-3 mb-3">
-                        <p class="card-title">Product Recommendation System</p>
-                        <p class="text-muted">Developed a hybrid model with 90.14% personalization accuracy, combining Popularity-Based, Neural Collaborative, and Content-Based Filtering with Explainable AI. Addressed 97.68% user-item sparsity on a 300K+ customer purchase dataset.</p>
-                        <div>
-                            <a class="btn btn-light border" href="https://github.com/ujjwalkumar14b/Recommendation">Code</a>
-                            <a class="btn btn-light border" href="https://recommend-m0mw.onrender.com">Link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card p-3 mb-3">
-                        <p class="card-title">Credit Card Fraud Detection</p>
-                        <p class="text-muted">An end-to-end Machine Learning pipeline utilizing XGBoost to identify fraudulent credit card transactions in heavily imbalanced datasets. Includes spatial feature engineering via Haversine formula, class imbalance handling, and model serialization.</p>
-                        <div>
-                            <a class="btn btn-light border" href="https://github.com/ujjwalkumar14b/Credit_Card_Fraud_Detection">Code</a>
-                            <a class="btn btn-light border" href="https://credit-card-fraud-detection-v4m8.onrender.com">Link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card p-3">
-                        <p class="card-title">Social Media Application</p>
-                        <p class="text-muted">Engineered a full-stack MERN social media platform featuring interactive post management and real-time video conferencing, enabling seamless media sharing and video interactions by implementing Socket.io for real-time WebRTC signaling.</p>
-                        <div>
-                            <a class="btn btn-light border" href="https://github.com/ujjwalkumar14b/Social_Media">Code</a>
-                            <a class="btn btn-light border" href="https://social-media-frontend-sigma-two.vercel.app">Link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="achievement" class="mt-5 mb-5">
-            <h3 class="text-center mb-5">Achievements</h3>
-            <div class="row">
+            <div class="row g-4 mt-2 align-items-stretch">
                 <div class="col-lg-6">
-                    <div class="card p-3 mb-3">
-                        <h5>500+ LeetCode Problems </h5>
-                        <p>Strengthened proficiency in Data Structures and Algorithms with Python.</p>
-                        <a class="text-decoration-none" href="https://leetcode.com/u/ujjwalkumar14b">LeetCode Profile</a>
+                    <div class="card p-4 h-100">
+                        <h4 class="h5 mb-3 text-white"><i class="fa-solid fa-brain me-2 opacity-75"></i> Data Science & ML Enthusiast</h4>
+                        <p class="text-muted mb-3">
+                            I am currently pursuing my Bachelor of Technology in Computer Science & Engineering at Meerut Institute of Engineering and Technology. With a solid foundation in Python, Data Structures and Algorithms, Data Science, and Machine Learning, I thrive on building end-to-end applications that solve real-world problems.
+                        </p>
+                        <p class="text-muted mb-0">
+                            My experience spans engineering high-throughput web applications, optimizing time-series forecasting models, and implementing machine learning algorithms for predictive analysis and personalization.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-between gap-3">
+                    <div class="card p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <h5 class="h6 mb-1 text-white">B.Tech in Computer Science & Engineering</h5>
+                                <div class="text-muted small">Meerut Institute of Engineering and Technology</div>
+                            </div>
+                            <span class="badge badge-monochrome">Aug 2023 - Jun 2027</span>
+                        </div>
+                    </div>
+
+                    <div class="card p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <div>
+                                <h5 class="h6 mb-1 text-white">Senior Secondary Education in PCM</h5>
+                                <div class="text-muted small">Army Public School (APS), Meerut</div>
+                            </div>
+                            <span class="badge badge-monochrome">Mar 2021 - Jun 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills" class="pt-5 mt-5">
+            <div class="text-center">
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-4 h-100">
+                        <h5 class="h6 mb-3 text-uppercase tracking-wider opacity-75"><i class="fa-solid fa-code me-2"></i> Languages</h5>
+                        <div>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-4 h-100">
+                        <h5 class="h6 mb-3 text-uppercase tracking-wider opacity-75"><i class="fa-solid fa-laptop-code me-2"></i> Development</h5>
+                        <div>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">React.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-4 h-100">
+                        <h5 class="h6 mb-3 text-uppercase tracking-wider opacity-75"><i class="fa-solid fa-chart-line me-2"></i> Data Science</h5>
+                        <div>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Seaborn</span>
+                            <span class="skill-tag">Scikit-Learn</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card p-4 h-100">
+                        <h5 class="h6 mb-3 text-uppercase tracking-wider opacity-75"><i class="fa-solid fa-screwdriver-wrench me-2"></i> Tools & DevOps</h5>
+                        <div>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Jupyter</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience" class="pt-5 mt-5">
+            <div class="text-center">
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-12">
+                    <div class="card p-4">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 pb-3 border-bottom border-secondary border-opacity-25">
+                            <div>
+                                <h4 class="h5 mb-1 text-white">AI-ML Intern</h4>
+                                <div class="text-muted">Codomax Digital Solutions</div>
+                            </div>
+                            <span class="badge badge-monochrome mt-2 mt-md-0">Jul 2026 – Aug 2026</span>
+                        </div>
+                        <ul class="experience-list">
+                            <li>Engineered an end-to-end Time Series Forecasting pipeline for 80 quarterly power-consumption observations (2001–2020) utilizing Python, Pandas, and Statsmodels, generating 8-quarter out-of-sample forecasts to support energy-demand prediction.</li>
+                            <li>Performed extensive time-series EDA, rolling-window analysis, seasonal decomposition, and ADF stationarity testing (p=0.9986).</li>
+                            <li>Implemented Holt-Winters Exponential Smoothing with additive trend and quarterly seasonality to optimize prediction metrics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card p-4">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 pb-3 border-bottom border-secondary border-opacity-25">
+                            <div>
+                                <h4 class="h5 mb-1 text-white">Data Science Intern</h4>
+                                <div class="text-muted">AISECT LEARN</div>
+                            </div>
+                            <span class="badge badge-monochrome mt-2 mt-md-0">Nov 2025 – Jan 2026</span>
+                        </div>
+                        <ul class="experience-list">
+                            <li>Identified user segment dynamics by clustering users into 4 distinct behavioral groups using unsupervised K-Means Clustering.</li>
+                            <li>Identified a 59.1% churn rate in the High-Risk Spenders segment by developing supervised predictive models using Logistic Regression.</li>
+                            <li>Delivered actionable behavioral insights for business strategies to increase user retention.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card p-4">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 pb-3 border-bottom border-secondary border-opacity-25">
+                            <div>
+                                <h4 class="h5 mb-1 text-white">Full Stack Developer Intern</h4>
+                                <div class="text-muted">EduSkills Foundation</div>
+                            </div>
+                            <span class="badge badge-monochrome mt-2 mt-md-0">Oct 2024 – Dec 2024</span>
+                        </div>
+                        <ul class="experience-list">
+                            <li>Engineered scalable full-stack web applications supporting dynamic user interactions and seamless data persistence by developing RESTful APIs using Python (Flask/Django) and establishing optimized relational schemas in MySQL.</li>
+                            <li>Strengthened application security and identity management by building a robust authentication system featuring secure password hashing, session control, and user access validation.</li>
+                            <li>Streamlined administrative data operations by constructing an interactive student management system featuring full CRUD capability.</li>
+                            <li>Accelerated product delivery and multi-device usability by designing responsive user interfaces with Bootstrap, HTML5, and CSS3.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="pt-5 mt-5">
+            <div class="text-center">
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="h5 mb-3 text-white">Product Recommendation System</h4>
+                            <p class="text-muted small mb-4">
+                                Developed a hybrid model with 90.14% personalization accuracy, combining Popularity-Based, Neural Collaborative, and Content-Based Filtering with Explainable AI. Addressed 97.68% user-item sparsity on a 300K+ customer purchase dataset.
+                            </p>
+                        </div>
+                        <div class="d-flex gap-2 pt-3 border-top border-secondary border-opacity-25">
+                            <a class="btn-mono-outline btn-sm flex-fill text-center justify-content-center" href="https://github.com/ujjwalkumar14b/Recommendation" target="_blank"><i class="fa-brands fa-github me-1"></i> Code</a>
+                            <a class="btn-mono btn-sm flex-fill text-center justify-content-center" href="https://recommend-m0mw.onrender.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="h5 mb-3 text-white">Credit Card Fraud Detection</h4>
+                            <p class="text-muted small mb-4">
+                                An end-to-end Machine Learning pipeline utilizing XGBoost to identify fraudulent credit card transactions in heavily imbalanced datasets. Includes spatial feature engineering via Haversine formula, class imbalance handling, and model serialization.
+                            </p>
+                        </div>
+                        <div class="d-flex gap-2 pt-3 border-top border-secondary border-opacity-25">
+                            <a class="btn-mono-outline btn-sm flex-fill text-center justify-content-center" href="https://github.com/ujjwalkumar14b/Credit_Card_Fraud_Detection" target="_blank"><i class="fa-brands fa-github me-1"></i> Code</a>
+                            <a class="btn-mono btn-sm flex-fill text-center justify-content-center" href="https://credit-card-fraud-detection-v4m8.onrender.com" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="h5 mb-3 text-white">Social Media Application</h4>
+                            <p class="text-muted small mb-4">
+                                Engineered a full-stack MERN social media platform featuring interactive post management and real-time video conferencing, enabling seamless media sharing and video interactions by implementing Socket.io for real-time WebRTC signaling.
+                            </p>
+                        </div>
+                        <div class="d-flex gap-2 pt-3 border-top border-secondary border-opacity-25">
+                            <a class="btn-mono-outline btn-sm flex-fill text-center justify-content-center" href="https://github.com/ujjwalkumar14b/Social_Media" target="_blank"><i class="fa-brands fa-github me-1"></i> Code</a>
+                            <a class="btn-mono btn-sm flex-fill text-center justify-content-center" href="https://social-media-frontend-sigma-two.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="achievement" class="pt-5 mt-5">
+            <div class="text-center">
+                <h2 class="section-title">Achievements</h2>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-6">
+                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fa-solid fa-trophy fs-4 me-3 text-white"></i>
+                                <h4 class="h5 mb-0 text-white">500+ LeetCode Problems Solved</h4>
+                            </div>
+                            <p class="text-muted mb-3">Strengthened proficiency in Data Structures and Algorithms using Python with consistent problem-solving practice.</p>
+                        </div>
+                        <div>
+                            <a class="btn-mono-outline btn-sm" href="https://leetcode.com/u/ujjwalkumar14b" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> LeetCode Profile
+                            </a>
+                        </div>
                     </div>   
                 </div>
                 <div class="col-lg-6">
-                    <div class="card p-3">
-                        <h5>Dean's List (Top 1% Rank)</h5>
-                        <p>Ranked among the top 1% of engineering students at MIET for the academic year 2023–24.</p>
+                    <div class="card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-award fs-4 me-3 text-white"></i>
+                            <h4 class="h5 mb-0 text-white">Dean's List (Top 1% Rank)</h4>
+                        </div>
+                        <p class="text-muted mb-0">Ranked among the top 1% of engineering students at MIET for academic excellence during the academic year 2023–24.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="mt-5 mb-5">
-            <p class="text-center">Built by Ujjwal Kumar © 2026. All rights reserved.</p>
+        <footer class="mt-5 pt-4 pb-4 text-center">
+            <p class="mb-0">Built by Ujjwal Kumar © 2026. All rights reserved.</p>
         </footer>
     </div>
 
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const roles = [
