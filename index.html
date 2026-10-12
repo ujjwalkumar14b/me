@@ -1,245 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujjwal Kumar | Data Scientist & AI/ML Engineer</title>
-    <meta name="title" content="Ujjwal Kumar - Data Scientist & AI/ML Engineer" />
+    <title>Ujjwal Kumar Portfolio</title>
+    <meta name="title" content="Ujjwal Kumar Portfolio" />
     <meta name="description" content="Specialized in Data Science and Machine Learning." />
     <meta name="keywords" content="Ujjwal Kumar, AI/ML Developer, Data Science, Machine Learning, Portfolio" />
     <meta name="author" content="Ujjwal Kumar" />
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://github.com/ujjwalkumar14b" />
-    <meta property="og:title" content="Ujjwal Kumar - Data Scientist & AI/ML Engineer" />
+    <meta property="og:title" content="Ujjwal Kumar Portfolio" />
     <meta property="og:description" content="Specialized in Data Science and Machine Learning." />
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/164533721?v=4" />
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/164533721?v=4"> 
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/164533721?v=4">     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        :root {
-            --bg-color: #0a0a0a;
-            --card-bg: #111111;
-            --border-color: #262626;
-            --border-hover: #555555;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --accent-white: #ffffff;
-        }
         body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.01em;
-            line-height: 1.6;
+            background-color: #EEEEEE;
+            font-family: "Inter Tight", sans-serif;
         }
-        #bg-canvas {
-            position: fixed;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-            z-index: 0;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: var(--accent-white);
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-        .text-muted {
-            color: var(--text-secondary) !important;
-        }
-        .section-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            position: relative;
-            display: inline-block;
-            margin-bottom: 2.5rem;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 40px;
-            height: 2px;
-            background-color: var(--accent-white);
+        a {
+            text-decoration: none;
+            color: black;
         }
         .navbar {
-            background-color: rgba(10, 10, 10, 0.85) !important;
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-color);
+            background-color: #EEEEEE;
         }
-        .navbar-brand {
-            font-weight: 800;
-            font-size: 1.25rem;
-            letter-spacing: -0.03em;
-            color: var(--accent-white) !important;
-        }
-        .nav-link {
-            color: var(--text-secondary) !important;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-            position: relative;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 2px;
-            left: 50%;
-            background-color: var(--accent-white);
-            transition: all 0.25s ease;
-            transform: translateX(-50%);
-        }
-        .nav-link:hover::after {
-            width: 80%;
-        }
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-        }
-        .badge-monochrome {
-            background-color: transparent;
-            color: var(--accent-white);
-            border: 1px solid var(--border-color);
-            font-weight: 500;
-            font-size: 0.8rem;
-            padding: 0.4em 0.8em;
-            border-radius: 20px;
-        }
-        .status-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 16px;
-            border-radius: 30px;
-            border: 1px solid var(--border-color);
-            background: rgba(255, 255, 255, 0.03);
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--accent-white);
-        }
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #ffffff;
+        .image {
             border-radius: 50%;
-            display: inline-block;
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-            animation: pulse 2s infinite;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
         }
-        @keyframes pulse {
-            0% { opacity: 0.4; transform: scale(0.9); }
-            50% { opacity: 1; transform: scale(1.1); }
-            100% { opacity: 0.4; transform: scale(0.9); }
-        }
-        .profile-img-container {
-            position: relative;
-            display: inline-block;
-        }
-        .profile-img {
-            width: 18rem;
-            height: 18rem;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 2px solid var(--border-color);
-            padding: 8px;
-            background-color: var(--card-bg);
-            transition: border-color 0.3s ease;
-        }
-        @keyframes blink-cursor {
-            from, to { border-color: transparent }
-            50% { border-color: var(--accent-white); }
-        }
-        .skill-tag {
-            display: inline-block;
-            background-color: #1a1a1a;
-            color: #d1d1d1;
-            border: 1px solid #2a2a2a;
-            padding: 6px 14px;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin-right: 6px;
-            margin-bottom: 8px;
-            transition: all 0.2s ease;
-        }
-        .btn-mono {
-            background-color: var(--accent-white);
-            color: #000000;
-            border: 1px solid var(--accent-white);
-            font-weight: 600;
-            font-size: 0.85rem;
-            padding: 8px 18px;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .btn-mono-outline {
-            background-color: transparent;
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-            font-weight: 500;
-            font-size: 0.85rem;
-            padding: 8px 18px;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .experience-list {
-            padding-left: 1.2rem;
-            margin-bottom: 0;
-        }
-        .experience-list li {
-            margin-bottom: 0.6rem;
-            color: var(--text-secondary);
-            font-size: 0.92rem;
-        }
-        .experience-list li::marker {
-            color: var(--accent-white);
-        }
-        footer {
-            border-top: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--bg-color);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #262626;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #404040;
+        .list-group-item {
+            background-color: #EEEEEE;
+            border: 1px solid #c9c8c8;
+            padding-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <canvas id="bg-canvas"></canvas>
-    <nav class="navbar navbar-expand-lg sticky-top py-3">
-        <div class="container">
-            <a class="navbar-brand" href="#">Ujjwal Kumar</a>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg sticky-top py-3">
+            <a class="navbar-brand" href="#">UJJWAL KUMAR</a>
             
-            <button class="navbar-toggler border-0 shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars fs-4"></i>
             </button>
 
@@ -251,428 +60,205 @@
                     <li class="nav-item"><a class="nav-link" href="mailto:ujjwalkumar14b@gmail.com">Email</a></li>
                 </ul>
             </div> 
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container my-5 py-lg-5">
-        <div id="hero" class="py-4">
-            <div class="row align-items-center gy-5">
-                <div class="col-lg-7 order-2 order-lg-1">
-                    <div class="status-badge mb-4">
-                        <span class="status-dot"></span> Available for Data Science Roles
-                    </div>
-                    <h1 class="display-4 fw-bold mb-3">Hi, I'm Ujjwal Kumar</h1>
-                    <h3 class="h2 mb-4 text-secondary fw-normal">I am a Data Scientist</h3>
-                    <p class="lead text-muted mb-4 pe-lg-4">
-                        Computer Science Engineer passionate about building scalable full-stack applications, machine learning pipelines, and algorithmic solutions with proven technical expertise.
+        <section id="hero" class="mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold">Data Scientist</h1>
+                    <p class="text-muted lead">Computer Science Engineer passionate about building scalable full-stack applications, machine learning pipelines, and algorithmic solutions with proven technical expertise.</p>
+                </div>
+                <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                    <img class="image shadow-sm" src="https://avatars.githubusercontent.com/u/164533721?v=4" alt="Ujjwal Kumar"/>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mt-5">
+            <h2 class="text-uppercase text-center mt-5 mb-5">About Me</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <p class="text-muted">
+                        I am currently pursuing my Bachelor of Technology in Computer Science & Engineering at Meerut Institute of Engineering and Technology. With a solid foundation in Python, Data Structures and Algorithms, Data Science, and Machine Learning, I thrive on building end-to-end applications that solve real-world problems.
+                    </p>
+                    <p class="text-muted">
+                        My experience spans engineering high-throughput web applications, optimizing time-series forecasting models, and implementing machine learning algorithms for predictive analysis and personalization.
                     </p>
                 </div>
-                <div class="col-lg-5 order-1 order-lg-2 text-center">
-                    <div class="profile-img-container">
-                        <img src="https://avatars.githubusercontent.com/u/164533721?v=4" alt="Ujjwal Kumar" class="profile-img" />
-                    </div>
-                </div>
             </div>
-        </div>
+        </section>
 
-        <div id="about" class="pt-5 mt-5">
-            <div class="text-center">
-                <h2 class="section-title">About Me</h2>
-            </div>
-
-            <div class="row g-4 mt-2 align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="card p-4 h-100">
-                        <h4 class="h5 mb-3 text-white">Data Science & ML Enthusiast</h4>
-                        <p class="text-muted mb-3">
-                            I am currently pursuing my Bachelor of Technology in Computer Science & Engineering at Meerut Institute of Engineering and Technology. With a solid foundation in Python, Data Structures and Algorithms, Data Science, and Machine Learning, I thrive on building end-to-end applications that solve real-world problems.
-                        </p>
-                        <p class="text-muted mb-0">
-                            My experience spans engineering high-throughput web applications, optimizing time-series forecasting models, and implementing machine learning algorithms for predictive analysis and personalization.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex flex-column justify-content-between gap-3">
-                    <div class="card p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <div>
-                                <h5 class="h6 mb-1 text-white">B.Tech in Computer Science & Engineering</h5>
-                                <div class="text-muted small">Meerut Institute of Engineering and Technology</div>
+        <section id="education" class="mt-5">
+            <h2 class="text-uppercase text-center mt-5 mb-5">Education</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                <div>
+                                    <h3>B.Tech in Computer Science & Engineering</h3>
+                                    <h5>Meerut Institute of Engineering and Technology</h5>
+                                </div>
+                                <span class="text-muted mt-2 mt-md-0">Aug 2023 - Jun 2027</span>
                             </div>
-                            <span class="badge badge-monochrome">Aug 2023 - Jun 2027</span>
-                        </div>
-                    </div>
-
-                    <div class="card p-4">
-                        <div class="d-flex justify-content-between align-items-start mb-2">
-                            <div>
-                                <h5 class="h6 mb-1 text-white">Senior Secondary Education in PCM</h5>
-                                <div class="text-muted small">Army Public School (APS), Meerut</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                <div>
+                                    <h3>Senior Secondary Education in PCM</h3>
+                                    <h5>Army Public School (APS), Meerut</h5>
+                                </div>
+                                <span class="text-muted mt-2 mt-md-0">Mar 2021 - Jun 2023</span>
                             </div>
-                            <span class="badge badge-monochrome">Mar 2021 - Jun 2023</span>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="skills" class="pt-5 mt-5">
-            <div class="text-center">
-                <h2 class="section-title">Technical Skills</h2>
-            </div>
-            <div class="row g-4 mt-2">
-                <div class="col-lg-3 col-md-6">
-                    <div class="card p-4 h-100">
-                        <h5 class="h6 mb-3 text-uppercase tracking-wider opacity-75">Languages</h5>
-                        <div>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">SQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card p-4 h-100">
-                        <h5 class="h6 mb-3 text-uppercase tracking-wider opacity-75">Development</h5>
-                        <div>
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Bootstrap</span>
-                            <span class="skill-tag">React.js</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card p-4 h-100">
-                        <h5 class="h6 mb-3 text-uppercase tracking-wider opacity-75">Data Science</h5>
-                        <div>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">Matplotlib</span>
-                            <span class="skill-tag">Seaborn</span>
-                            <span class="skill-tag">Scikit-Learn</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="card p-4 h-100">
-                        <h5 class="h6 mb-3 text-uppercase tracking-wider opacity-75">Tools & DevOps</h5>
-                        <div>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">GitHub</span>
-                            <span class="skill-tag">Jupyter</span>
-                            <span class="skill-tag">VS Code</span>
-                        </div>
-                    </div>
+        <section id="skills" class="mt-5">
+            <h2 class="text-uppercase text-center mt-5 mb-5">Technical Skills</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5>Languages</h5>
+                            <span class="text-muted">Python, SQL</span>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>Development</h5>
+                            <span class="text-muted">HTML5, CSS3, JavaScript, Bootstrap</span>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>Data Science</h5>
+                            <span class="text-muted">NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn</span>
+                        </li>
+                        <li class="list-group-item">
+                            <h5>Tools & DevOps</h5>
+                            <span class="text-muted">Git, GitHub, Jupyter, VS Code</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="experience" class="pt-5 mt-5">
-            <div class="text-center">
-                <h2 class="section-title">Work Experience</h2>
-            </div>
-            <div class="row g-4 mt-2">
-                <div class="col-12">
-                    <div class="card p-4">
-                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 pb-3 border-bottom border-secondary border-opacity-25">
-                            <div>
-                                <h4 class="h5 mb-1 text-white">AI-ML Intern</h4>
-                                <div class="text-muted">Codomax Digital Solutions</div>
+        <section id="experience" class="mt-5">
+            <h2 class="text-uppercase text-center mt-5 mb-5">Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-2">
+                                <div>
+                                    <h3>AI-ML Intern</h3>
+                                    <h5>Codomax Digital Solutions</h5>
+                                </div>
+                                <span class="text-muted mt-2 mt-md-0">Jul 2026 – Aug 2026</span>
                             </div>
-                            <span class="badge badge-monochrome mt-2 mt-md-0">Jul 2026 – Aug 2026</span>
-                        </div>
-                        <ul class="experience-list">
-                            <li>Engineered an end-to-end Time Series Forecasting pipeline for 80 quarterly power-consumption observations (2001–2020) utilizing Python, Pandas, and Statsmodels, generating 8-quarter out-of-sample forecasts to support energy-demand prediction.</li>
-                            <li>Performed extensive time-series EDA, rolling-window analysis, seasonal decomposition, and ADF stationarity testing (p=0.9986).</li>
-                            <li>Implemented Holt-Winters Exponential Smoothing with additive trend and quarterly seasonality to optimize prediction metrics.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="card p-4">
-                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 pb-3 border-bottom border-secondary border-opacity-25">
-                            <div>
-                                <h4 class="h5 mb-1 text-white">Data Science Intern</h4>
-                                <div class="text-muted">AISECT LEARN</div>
+                            <p class="text-muted">Engineered an end-to-end Time Series Forecasting pipeline for 80 quarterly power-consumption observations (2001–2020) utilizing Python, Pandas, and Statsmodels, generating 8-quarter out-of-sample forecasts to support energy-demand prediction.</p>
+                            <p class="text-muted">Performed extensive time-series EDA, rolling-window analysis, seasonal decomposition, and ADF stationarity testing (p=0.9986).</p>
+                            <p class="text-muted">Implemented Holt-Winters Exponential Smoothing with additive trend and quarterly seasonality to optimize prediction metrics.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-2">
+                                <div>
+                                    <h3>Data Science Intern</h3>
+                                    <h5>AISECT LEARN</h5>
+                                </div>
+                                <span class="text-muted mt-2 mt-md-0">Nov 2025 – Jan 2026</span>
                             </div>
-                            <span class="badge badge-monochrome mt-2 mt-md-0">Nov 2025 – Jan 2026</span>
-                        </div>
-                        <ul class="experience-list">
-                            <li>Identified user segment dynamics by clustering users into 4 distinct behavioral groups using unsupervised K-Means Clustering.</li>
-                            <li>Identified a 59.1% churn rate in the High-Risk Spenders segment by developing supervised predictive models using Logistic Regression.</li>
-                            <li>Delivered actionable behavioral insights for business strategies to increase user retention.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <div class="card p-4">
-                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 pb-3 border-bottom border-secondary border-opacity-25">
-                            <div>
-                                <h4 class="h5 mb-1 text-white">Full Stack Developer Intern</h4>
-                                <div class="text-muted">EduSkills Foundation</div>
+                            <p class="text-muted">Identified user segment dynamics by clustering users into 4 distinct behavioral groups using unsupervised K-Means Clustering.</p>
+                            <p class="text-muted">Identified a 59.1% churn rate in the High-Risk Spenders segment by developing supervised predictive models using Logistic Regression.</p>
+                            <p class="text-muted">Delivered actionable behavioral insights for business strategies to increase user retention.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-2">
+                                <div>
+                                    <h3>Full Stack Developer Intern</h3>
+                                    <h5>EduSkills Foundation</h5>
+                                </div>
+                                <span class="text-muted mt-2 mt-md-0">Jul 2026 – Aug 2026</span>
                             </div>
-                            <span class="badge badge-monochrome mt-2 mt-md-0">Oct 2024 – Dec 2024</span>
-                        </div>
-                        <ul class="experience-list">
-                            <li>Engineered scalable full-stack web applications supporting dynamic user interactions and seamless data persistence by developing RESTful APIs using Python (Flask/Django) and establishing optimized relational schemas in MySQL.</li>
-                            <li>Strengthened application security and identity management by building a robust authentication system featuring secure password hashing, session control, and user access validation.</li>
-                            <li>Streamlined administrative data operations by constructing an interactive student management system featuring full CRUD capability.</li>
-                            <li>Accelerated product delivery and multi-device usability by designing responsive user interfaces with Bootstrap, HTML5, and CSS3.</li>
-                        </ul>
-                    </div>
+                            <p class="text-muted">Engineered scalable full-stack web applications supporting dynamic user interactions and seamless data persistence by developing RESTful APIs using Python (Flask/Django) and establishing optimized relational schemas in MySQL.</p>
+                            <p class="text-muted">Strengthened application security and identity management by building a robust authentication system featuring secure password hashing, session control, and user access validation.</p>
+                            <p class="text-muted">Streamlined administrative data operations by constructing an interactive student management system featuring full CRUD capability.</p>
+                            <p class="text-muted">Accelerated product delivery and multi-device usability by designing responsive user interfaces with Bootstrap, HTML5, and CSS3.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-
-        <div id="projects" class="pt-5 mt-5">
-            <div class="text-center">
-                <h2 class="section-title">Featured Projects</h2>
-            </div>
-            <div class="row g-4 mt-2">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="h5 mb-3 text-white">Product Recommendation System</h4>
-                            <p class="text-muted small mb-4">
-                                Developed a hybrid model with 95.30% personalization accuracy, combining Time Aware Popularity-Based, User-based and Item-based Collaborative, and Content-Based Filtering with Explainable AI. Addressed 97.68% user-item sparsity on a 300K+ customer purchase dataset.
-                            </p>
-                        </div>
-                        <div class="d-flex gap-2 pt-3 border-top border-secondary border-opacity-25">
-                            <a class="btn-mono-outline btn-sm flex-fill text-center justify-content-center" href="https://github.com/ujjwalkumar14b/Recommendation">Code</a>
-                            <a class="btn-mono btn-sm flex-fill text-center justify-content-center" href="https://recommend-m0mw.onrender.com">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="h5 mb-3 text-white">Ride Fare Dynamic Pricing System</h4>
-                            <p class="text-muted small mb-4">
-                                An end-to-end Machine Learning project designed to build a dynamic price prediction model for a ride-sharing service. The system goes beyond basic trip duration pricing by incorporating real-time supply-demand dynamics, customer loyalty profiles, time of day, location categories, and vehicle types.
-                            </p>
-                        </div>
-                        <div class="d-flex gap-2 pt-3 border-top border-secondary border-opacity-25">
-                            <a class="btn-mono-outline btn-sm flex-fill text-center justify-content-center" href="https://github.com/ujjwalkumar14b/Dynamic_Pricing">Code</a>
-                            <a class="btn-mono btn-sm flex-fill text-center justify-content-center" href="https://dynamic-pricing-h35o.onrender.com">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="h5 mb-3 text-white">Credit Card Fraud Detection</h4>
-                            <p class="text-muted small mb-4">
-                                An end-to-end Machine Learning pipeline utilizing XGBoost to identify fraudulent credit card transactions in heavily imbalanced datasets. Includes spatial feature engineering via Haversine formula, class imbalance handling, and model serialization.
-                            </p>
-                        </div>
-                        <div class="d-flex gap-2 pt-3 border-top border-secondary border-opacity-25">
-                            <a class="btn-mono-outline btn-sm flex-fill text-center justify-content-center" href="https://github.com/ujjwalkumar14b/Credit_Card_Fraud_Detection">Code</a>
-                            <a class="btn-mono btn-sm flex-fill text-center justify-content-center" href="https://credit-card-fraud-detection-v4m8.onrender.com">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="h5 mb-3 text-white">Text Summarizer</h4>
-                            <p class="text-muted small mb-4">
-                                It is a web application that performs extractive text summarization using the NLTK library. It analyzes input text or uploaded .txt files, removes stop words and punctuation, and scores sentences based on word frequency to generate concise summaries.
-                            </p>
-                        </div>
-                        <div class="d-flex gap-2 pt-3 border-top border-secondary border-opacity-25">
-                            <a class="btn-mono-outline btn-sm flex-fill text-center justify-content-center" href="https://github.com/ujjwalkumar14b/Text_Summarizer">Code</a>
-                            <a class="btn-mono btn-sm flex-fill text-center justify-content-center" href="https://text-summarizer-jkym.onrender.com">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="h5 mb-3 text-white">Social Media Application</h4>
-                            <p class="text-muted small mb-4">
-                                Engineered a full-stack MERN social media platform featuring interactive post management and real-time video conferencing, enabling seamless media sharing and video interactions by implementing Socket.io for real-time WebRTC signaling.
-                            </p>
-                        </div>
-                        <div class="d-flex gap-2 pt-3 border-top border-secondary border-opacity-25">
-                            <a class="btn-mono-outline btn-sm flex-fill text-center justify-content-center" href="https://github.com/ujjwalkumar14b/Social_Media">Code</a>
-                            <a class="btn-mono btn-sm flex-fill text-center justify-content-center" href="https://social-media-frontend-sigma-two.vercel.app">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="achievement" class="pt-5 mt-5">
-            <div class="text-center">
-                <h2 class="section-title">Achievements</h2>
-            </div>
-            <div class="row g-4 mt-2">
-                <div class="col-lg-6">
-                    <div class="card p-4 h-100 d-flex flex-column justify-content-between">
-                        <div>
-                            <div class="d-flex align-items-center mb-3">
-                                <h4 class="h5 mb-0 text-white">600+ LeetCode Problems Solved</h4>
+        </section>
+                    
+        <section id="projects" class="mt-5">
+            <h2 class="text-uppercase text-center mt-5 mb-5">Projects</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-2">
+                                <h3>Product Recommendation System</h3>
+                                <span><a href="https://github.com/ujjwalkumar14b/Recommendation">Code</a> | <a href="https://recommend-m0mw.onrender.com">Live Demo</a></span>
                             </div>
-                            <p class="text-muted mb-3">Strengthened proficiency in Data Structures and Algorithms using Python with consistent problem-solving practice.</p>
-                        </div>
-                    </div>   
-                </div>
-                <div class="col-lg-6">
-                    <div class="card p-4 h-100">
-                        <div class="d-flex align-items-center mb-3">
-                            <h4 class="h5 mb-0 text-white">Dean's List (Top 1% Rank)</h4>
-                        </div>
-                        <p class="text-muted mb-0">Ranked among the top 1% of engineering students at MIET for academic excellence during the academic year 2023–24.</p>
-                    </div>
+                            <p class="text-muted">Developed a hybrid model with 95.30% personalization accuracy, combining Time Aware Popularity-Based, User-based and Item-based Collaborative, and Content-Based Filtering with Explainable AI. Addressed 97.68% user-item sparsity on a 300K+ customer purchase dataset.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-2">
+                                <h3>Ride Fare Dynamic Pricing System</h3>
+                                <span><a href="https://github.com/ujjwalkumar14b/Dynamic_Pricing">Code</a> | <a href="https://dynamic-pricing-h35o.onrender.com">Live Demo</a></span>
+                            </div>
+                            <p class="text-muted">An end-to-end Machine Learning project designed to build a dynamic price prediction model for a ride-sharing service. The system goes beyond basic trip duration pricing by incorporating real-time supply-demand dynamics, customer loyalty profiles, time of day, location categories, and vehicle types.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-2">
+                                <h3>Credit Card Fraud Detection</h3>
+                                <span><a href="https://github.com/ujjwalkumar14b/Credit_Card_Fraud_Detection">Code</a> | <a href="https://credit-card-fraud-detection-v4m8.onrender.com">Live Demo</a></span>
+                            </div>
+                            <p class="text-muted">An end-to-end Machine Learning pipeline utilizing XGBoost to identify fraudulent credit card transactions in heavily imbalanced datasets. Includes spatial feature engineering via Haversine formula, class imbalance handling, and model serialization.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-2">
+                                <h3>Text Summarizer</h3>
+                                <span><a href="https://github.com/ujjwalkumar14b/Text_Summarizer">Code</a> | <a href="https://text-summarizer-jkym.onrender.com">Live Demo</a></span>
+                            </div>
+                            <p class="text-muted">It is a web application that performs extractive text summarization using the NLTK library. It analyzes input text or uploaded .txt files, removes stop words and punctuation, and scores sentences based on word frequency to generate concise summaries.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-2">
+                                <h3>Social Media Application</h3>
+                                <span><a href="https://github.com/ujjwalkumar14b/Social_Media">Code</a> | <a href="https://social-media-frontend-sigma-two.vercel.app">Live Demo</a></span>
+                            </div>
+                            <p class="text-muted">Engineered a full-stack MERN social media platform featuring interactive post management and real-time video conferencing, enabling seamless media sharing and video interactions by implementing Socket.io for real-time WebRTC signaling.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <footer class="mt-5 pt-4 pb-4 text-center">
-            <p class="mb-0">Built by Ujjwal Kumar © 2026. All rights reserved.</p>
+        <section id="achievements" class="mt-5">
+            <h2 class="text-uppercase text-center mt-5 mb-5">Achievements</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h3>LeetCode Experience</h3>
+                            <h5>600+ LeetCode Problems Solved</h5>
+                            <p class="text-muted mb-0">Strengthened proficiency in Data Structures and Algorithms using Python with consistent problem-solving practice.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h3>Academic Excellence</h3>
+                            <h5>Dean's List (Top 1% Rank)</h5>
+                            <p class="text-muted mb-0">Ranked among the top 1% of engineering students at MIET for academic excellence during the academic year 2023–24.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="mt-5 mb-5">
+            <p class="text-center text-muted text-uppercase">Built by Ujjwal Kumar © 2026.</p>
         </footer>
     </div>
-
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
-    <script>
-        (() => {
-            const canvas = document.getElementById("bg-canvas");
-            if (!canvas) return;
-            const ctx = canvas.getContext("2d");
-            if (!ctx) return;
-
-            const config = {
-                count: 50,
-                size: 1,
-                speed: 1,
-                dotOpacity: 1,
-                lineOpacity: 0,
-                mouseInteractive: false
-            };
-
-            let particles = [];
-
-            const mouse = {
-                x: null,
-                y: null,
-                radius: 120
-            };
-
-            let width = window.innerWidth;
-            let height = window.innerHeight;
-
-            function resize() {
-                const dpr = Math.min(window.devicePixelRatio || 1, 2);
-                width = window.innerWidth;
-                height = window.innerHeight;
-                canvas.width = width * dpr;
-                canvas.height = height * dpr;
-                canvas.style.width = `${width}px`;
-                canvas.style.height = `${height}px`;
-                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-            }
-
-            class Particle {
-                constructor() {
-                    this.x = Math.random() * width;
-                    this.y = Math.random() * height;
-                    const angle = Math.random() * Math.PI * 2;
-                    this.vx = Math.cos(angle) * config.speed;
-                    this.vy = Math.sin(angle) * config.speed;
-                }
-
-                update() {
-                    this.x += this.vx;
-                    this.y += this.vy;
-
-                    if (this.x < 0) {
-                        this.x = width;
-                    } else if (this.x > width) {
-                        this.x = 0;
-                    }
-                    if (this.y < 0) {
-                        this.y = height;
-                    } else if (this.y > height) {
-                        this.y = 0;
-                    }
-                    if (config.mouseInteractive && mouse.x !== null && mouse.y !== null) {
-                        const dx = mouse.x - this.x;
-                        const dy = mouse.y - this.y;
-                        const distance = Math.sqrt(dx * dx + dy * dy);
-
-                        if (distance > 0 && distance < mouse.radius) {
-                            const force = (mouse.radius - distance) / mouse.radius;
-                            this.x -= (dx / distance) * force * 3;
-                            this.y -= (dy / distance) * force * 3;
-                        }
-                    }
-                }
-
-                draw() {
-                    if (config.dotOpacity <= 0) return;
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, config.size, 0, Math.PI * 2);
-                    ctx.fillStyle = `rgba(255, 255, 255, ${config.dotOpacity})`;
-                    ctx.fill();
-                }
-            }
-
-            function init() {
-                resize();
-                particles = Array.from(
-                    { length: config.count },
-                    () => new Particle()
-                );
-            }
-
-            function drawLines() {
-                if (config.lineOpacity <= 0) return;
-                const maxDistance = 110;
-                const maxDistanceSquared =maxDistance * maxDistance;
-
-                for (let i = 0; i < particles.length; i++) {
-                    for (let j = i + 1; j < particles.length; j++) {
-                        const dx = particles[i].x - particles[j].x;
-                        const dy = particles[i].y - particles[j].y;
-                        const distanceSquared = dx * dx + dy * dy;
-
-                        if (distanceSquared < maxDistanceSquared) {
-                            const distance = Math.sqrt(distanceSquared);
-                            const opacity = (1 - distance / maxDistance) * config.lineOpacity;
-                            ctx.beginPath();
-                            ctx.moveTo(particles[i].x, particles[i].y);
-                            ctx.lineTo(particles[j].x, particles[j].y);
-                            ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
-                            ctx.lineWidth = 0.8;
-                            ctx.stroke();
-                        }
-                    }
-                }
-            }
-
-            function animate() {
-                ctx.clearRect(0,0,width,height);
-                for (const particle of particles) {
-                    particle.update();
-                    particle.draw();
-                }
-                drawLines();
-                requestAnimationFrame(animate);
-            }
-            window.addEventListener("resize", resize);
-            init();
-            animate();
-        })();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
