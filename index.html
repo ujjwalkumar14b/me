@@ -1,342 +1,164 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujjwal Kumar | Data Scientist and Machine Learning Engineer</title>
+    <title>Ujjwal Kumar Portfolio</title>
+    <meta name="title" content="Ujjwal Kumar Portfolio" />
     <meta name="description" content="Specialized in Data Science and Machine Learning." />
     <meta name="keywords" content="Ujjwal Kumar, AI/ML Developer, Data Science, Machine Learning, Portfolio" />
     <meta name="author" content="Ujjwal Kumar" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#000000" />
-
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://github.com/ujjwalkumar14b" />
     <meta property="og:title" content="Ujjwal Kumar Portfolio" />
     <meta property="og:description" content="Specialized in Data Science and Machine Learning." />
-    <meta property="og:image" content="https://placehold.co/400x400/000/FFF?text=UK" />
-
-    <link rel="icon" href="https://placehold.co/400x400/000/FFF?text=UK">
+    <meta property="og:image" content="https://placehold.co/400x400/FFF/000000?text=UK" />
+    <link rel="icon" href="https://placehold.co/400x400/FFF/000000?text=UK"> 
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <style>
+        h1, h2{
+            font-family: "Cormorant Garamond", ui-serif, Georgia, serif;
+        }
+        a, p{
+            font-family:'Times New Roman', Times, serif;
+            text-align: justify; 
+            text-justify: inter-word;
+        }
+        .navbar{
+            background-color: white;
+        }
+        #hero{
+            min-height: 10rem;
+        }
+        .image {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
 </head>
-<body class="bg-black text-white" data-bs-spy="scroll" data-bs-target="#nav" data-bs-offset="80" tabindex="0">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-black sticky-top border-bottom border-secondary-subtle">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#top">UK</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav ms-auto gap-lg-2">
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-                    <li class="nav-item"><a class="btn btn-light" href="#contact">Contact</a></li>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand sticky-top border-bottom border-secondary">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/ujjwalkumar14b">LinkedIn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/ujjwalkumar14b">GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://leetcode.com/u/ujjwalkumar14b">LeetCode</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:ujjwalkumar14b@gmail.com">Email</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+            </div> 
+        </nav>
 
-    <main id="top">
-
-        <!-- Hero -->
-        <header class="container py-5">
-            <div class="row py-5 align-items-center">
-                <div class="col-lg-8">
-                    <p class="text-secondary fs-5 mb-3">Data Scientist and Machine Learning Engineer</p>
-                    <h1 class="display-1 fw-bold lh-1 mb-4">Ujjwal<br>Kumar</h1>
-                    <p class="lead text-secondary col-lg-8 mb-5">I turn messy data into models people can use: forecasting, recommendation, fraud detection and NLP, shipped as live web apps.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#projects" class="btn btn-light btn-lg px-4">View projects</a>
-                        <a href="https://github.com/ujjwalkumar14b" class="btn btn-outline-light btn-lg px-4">GitHub</a>
-                        <a href="https://linkedin.com/in/ujjwalkumar14b" class="btn btn-outline-light btn-lg px-4">LinkedIn</a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                  <img src="https://avatars.githubusercontent.com/u/164533721?v=4" style="height: 20rem; border-radius:50%";>
-                </div>
-            </div>
-
-            <div class="row text-center g-0 border border-secondary-subtle rounded-4 mt-5">
-                <div class="col-6 col-md-3 p-4 border-end border-bottom border-bottom-md-0 border-secondary-subtle">
-                    <div class="display-5 fw-bold">3</div>
-                    <div class="text-secondary">Internships</div>
-                </div>
-                <div class="col-6 col-md-3 p-4 border-bottom border-secondary-subtle border-end-md-0">
-                    <div class="display-5 fw-bold">5</div>
-                    <div class="text-secondary">Live projects</div>
-                </div>
-                <div class="col-6 col-md-3 p-4 border-end border-top border-secondary-subtle">
-                    <div class="display-5 fw-bold">600+</div>
-                    <div class="text-secondary">LeetCode problems</div>
-                </div>
-                <div class="col-6 col-md-3 p-4 border-top border-secondary-subtle">
-                    <div class="display-5 fw-bold">Top 1%</div>
-                    <div class="text-secondary">Dean's List</div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Experience -->
-        <section id="experience" class="container py-5">
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold">Experience</h2>
-                    <p class="text-secondary fs-5">Hands-on work across forecasting, customer analytics and full-stack development.</p>
-                </div>
-            </div>
-
-            <div class="row py-4 border-top border-secondary-subtle">
-                <div class="col-md-3 mb-3">
-                    <p class="fw-semibold mb-1">Jul 2026 – Aug 2026</p>
-                    <p class="text-secondary">Codomax Digital Solutions</p>
-                </div>
-                <div class="col-md-9">
-                    <h3 class="h4 fw-bold">AI-ML Intern</h3>
-                    <ul class="text-secondary ps-3 mb-3">
-                        <li class="mb-2">Engineered an end-to-end time series forecasting pipeline on 80 quarterly power-consumption observations (2001–2020) using Python, Pandas and Statsmodels, producing 8-quarter out-of-sample forecasts for energy-demand prediction.</li>
-                        <li class="mb-2">Ran time-series EDA, rolling-window analysis, seasonal decomposition and ADF stationarity testing (p = 0.9986).</li>
-                        <li>Implemented Holt-Winters Exponential Smoothing with additive trend and quarterly seasonality to optimize prediction metrics.</li>
-                    </ul>
-                    <span class="badge text-bg-light">Python</span>
-                    <span class="badge text-bg-light">Pandas</span>
-                    <span class="badge text-bg-light">Statsmodels</span>
-                </div>
-            </div>
-
-            <div class="row py-4 border-top border-secondary-subtle">
-                <div class="col-md-3 mb-3">
-                    <p class="fw-semibold mb-1">Jul 2026 – Aug 2026</p>
-                    <p class="text-secondary">EduSkills Foundation</p>
-                </div>
-                <div class="col-md-9">
-                    <h3 class="h4 fw-bold">Full Stack Developer Intern</h3>
-                    <ul class="text-secondary ps-3 mb-3">
-                        <li class="mb-2">Built responsive full-stack web applications with HTML5, CSS3, JavaScript and Bootstrap.</li>
-                        <li class="mb-2">Developed RESTful APIs in Python (Flask) with optimized relational schemas in MySQL.</li>
-                        <li class="mb-2">Built an authentication system with secure password hashing, session control and user access validation.</li>
-                        <li>Streamlined administrative data operations with an interactive student management system featuring full CRUD.</li>
-                    </ul>
-                    <span class="badge text-bg-light">Flask</span>
-                    <span class="badge text-bg-light">MySQL</span>
-                    <span class="badge text-bg-light">Bootstrap</span>
-                </div>
-            </div>
-
-            <div class="row py-4 border-top border-bottom border-secondary-subtle">
-                <div class="col-md-3 mb-3">
-                    <p class="fw-semibold mb-1">Nov 2025 – Jan 2026</p>
-                    <p class="text-secondary">AISECT LEARN</p>
-                </div>
-                <div class="col-md-9">
-                    <h3 class="h4 fw-bold">Data Science Intern</h3>
-                    <ul class="text-secondary ps-3 mb-3">
-                        <li class="mb-2">Clustered users into 4 distinct behavioral groups with unsupervised K-Means.</li>
-                        <li class="mb-2">Found a 59.1% churn rate in the High-Risk Spenders segment using supervised Logistic Regression models.</li>
-                        <li>Delivered behavioral insights that support business strategies for user retention.</li>
-                    </ul>
-                    <span class="badge text-bg-light">K-Means</span>
-                    <span class="badge text-bg-light">Logistic Regression</span>
-                    <span class="badge text-bg-light">Scikit-Learn</span>
+        <section id="hero" class="mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>UJJWAL KUMAR</h1>
+                    <i>Data Scientist and Machine Learning Engineer</i>
                 </div>
             </div>
         </section>
 
-        <!-- Projects -->
-        <section id="projects" class="container py-5">
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold">Projects</h2>
-                    <p class="text-secondary fs-5">Each one has source code and a live demo you can try.</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-12">
-                    <div class="card bg-black border-light h-100">
-                        <div class="card-body p-4 p-lg-5">
-                            <span class="badge text-bg-light mb-3">Featured</span>
-                            <h3 class="card-title display-6 fw-bold">Product Recommendation System</h3>
-                            <p class="card-text text-secondary fs-5 col-lg-9">A hybrid model with 95.30% personalization accuracy. It combines time-aware popularity-based, user-based and item-based collaborative, and content-based filtering with Explainable AI. It handles 97.68% user-item sparsity on a 300K+ customer purchase dataset.</p>
-                            <div class="d-flex flex-wrap gap-2 mt-4">
-                                <a href="https://recommend-m0mw.onrender.com" class="btn btn-light">Live demo</a>
-                                <a href="https://github.com/ujjwalkumar14b/Recommendation" class="btn btn-outline-light">Code</a>
-                            </div>
-                        </div>
+        <main>
+            <section id="education" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Education</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                    <div>
+                                        <p>B.Tech in Computer Science & Engineering</p>
+                                        <p>Meerut Institute of Engineering and Technology</p>
+                                    </div>
+                                    <p>Aug 2023 - Jun 2027</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                    <div>
+                                        <p>Senior Secondary Education in PCM</p>
+                                        <p>Army Public School (APS), Meerut</p>
+                                    </div>
+                                    <p>Mar 2021 - Jun 2023</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card bg-black border-secondary h-100">
-                        <div class="card-body p-4">
-                            <h3 class="card-title h4 fw-bold">Ride Fare Dynamic Pricing System</h3>
-                            <p class="card-text text-secondary">A price prediction model for a ride-sharing service. It goes beyond trip duration by using real-time supply-demand dynamics, customer loyalty profiles, time of day, location categories and vehicle types.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 p-4 pt-0 d-flex gap-2">
-                            <a href="https://dynamic-pricing-p5o.onrender.com" class="btn btn-light btn-sm">Live demo</a>
-                            <a href="https://github.com/ujjwalkumar14b/Dynamic_Pricing" class="btn btn-outline-light btn-sm">Code</a>
-                        </div>
+            </section>
+    
+            <section id="skills" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Technical Skills</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><p>Languages: Python, SQL</p></li>
+                            <li class="list-group-item"><p>Development: HTML5, CSS3, JavaScript, Bootstrap</p></li>
+                            <li class="list-group-item"><p>Data Science: NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn</p></li>
+                            <li class="list-group-item"><p>Tools & DevOps: Git, GitHub, Jupyter Notebook, VS Code</p></li>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card bg-black border-secondary h-100">
-                        <div class="card-body p-4">
-                            <h3 class="card-title h4 fw-bold">Credit Card Fraud Detection</h3>
-                            <p class="card-text text-secondary">An XGBoost model that flags fraudulent transactions in heavily imbalanced data. It includes spatial feature engineering with the Haversine formula, class imbalance handling and model serialization.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 p-4 pt-0 d-flex gap-2">
-                            <a href="https://credit-card-fraud-detection-v4m8.onrender.com" class="btn btn-light btn-sm">Live demo</a>
-                            <a href="https://github.com/ujjwalkumar14b/Credit_Card_Fraud_Detection" class="btn btn-outline-light btn-sm">Code</a>
-                        </div>
+            </section>
+    
+            <section id="experience" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Experience</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p>As AI-ML Intern at Codomax Digital Solutions from Jul 2026 – Aug 2026, I engineered an end-to-end Time Series Forecasting pipeline for 80 quarterly power-consumption observations (2001–2020) utilizing Python, Pandas, and Statsmodels, generating 8-quarter out-of-sample forecasts to support energy-demand prediction. I performed extensive time-series EDA, rolling-window analysis, seasonal decomposition, and ADF stationarity testing (p=0.9986) and also implemented Holt-Winters Exponential Smoothing with additive trend and quarterly seasonality to optimize prediction metrics.</p>
+                            
+                        <p>As Data Science Intern at AISECT LEARN from Nov 2025 – Jan 2026, I identified user segment dynamics by clustering users into 4 distinct behavioral groups using unsupervised K-Means Clustering. I identified a 59.1% churn rate in the High-Risk Spenders segment by developing supervised predictive models using Logistic Regression. And delivered actionable behavioral insights for business strategies to increase user retention.</p>
+                        
+                        <p>As Full Stack Developer Intern at EduSkills Foundation from Jul 2026 – Aug 2026, I engineered responsive full-stack web applications using HTML5, CSS3, JavaScript and Bootstrap. I developed RESTful APIs using Python (Flask) and establishing optimized relational schemas in MySQL. I built a robust authentication system featuring secure password hashing, session control, and user access validation. Streamlined administrative data operations by constructing an interactive student management system featuring full CRUD capability.</p>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card bg-black border-secondary h-100">
-                        <div class="card-body p-4">
-                            <h3 class="card-title h4 fw-bold">Text Summarizer</h3>
-                            <p class="card-text text-secondary">A web app for extractive summarization with NLTK. It reads pasted text or uploaded .txt files, removes stop words and punctuation, and scores sentences by word frequency to produce concise summaries.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 p-4 pt-0 d-flex gap-2">
-                            <a href="https://text-summarizer-jkym.onrender.com" class="btn btn-light btn-sm">Live demo</a>
-                            <a href="https://github.com/ujjwalkumar14b/Text_Summarizer" class="btn btn-outline-light btn-sm">Code</a>
-                        </div>
+            </section>
+                        
+            <section id="projects" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Projects</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Product Recommendation System (<a href="https://github.com/ujjwalkumar14b/Recommendation">Code</a> | <a href="https://recommend-m0mw.onrender.com">Live Demo</a>): Developed a hybrid model with 95.30% personalization accuracy, combining Time Aware Popularity-Based, User-based and Item-based Collaborative, and Content-Based Filtering with Explainable AI. Addressed 97.68% user-item sparsity on a 300K+ customer purchase dataset.</p>
+    
+                        <p>Ride Fare Dynamic Pricing System (<a href="https://github.com/ujjwalkumar14b/Dynamic_Pricing">Code</a> | <a href="https://dynamic-pricing-p5o.onrender.com">Live Demo</a>): Designed a dynamic price prediction model for a ride-sharing service. The system goes beyond basic trip duration pricing by incorporating real-time supply-demand dynamics, customer loyalty profiles, time of day, location categories, and vehicle types.</p>
+    
+                        <p>Credit Card Fraud Detection (<a href="https://github.com/ujjwalkumar14b/Credit_Card_Fraud_Detection">Code</a> | <a href="https://credit-card-fraud-detection-v4m8.onrender.com">Live Demo</a>): Built a detection model utilizing XGBoost to identify fraudulent credit card transactions in heavily imbalanced datasets. Includes spatial feature engineering via Haversine formula, class imbalance handling, and model serialization.</p>
+                                   
+                        <p>Text Summarizer (<a href="https://github.com/ujjwalkumar14b/Text_Summarizer">Code</a> | <a href="https://text-summarizer-jkym.onrender.com">Live Demo</a>): Engineered a web application that performs extractive text summarization using the NLTK library. It analyzes input text or uploaded .txt files, removes stop words and punctuation, and scores sentences based on word frequency to generate concise summaries.</p>
+                                  
+                        <p>Social Media Application (<a href="https://github.com/ujjwalkumar14b/Social_Media">Code</a> | <a href="https://social-media-frontend-sigma-two.vercel.app">Live Demo</a>): Developed a full-stack MERN social media platform featuring interactive post management and real-time video conferencing, enabling seamless media sharing and video interactions by implementing Socket.io for real-time WebRTC signaling.</p>
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="card bg-black border-secondary h-100">
-                        <div class="card-body p-4">
-                            <h3 class="card-title h4 fw-bold">Social Media Application</h3>
-                            <p class="card-text text-secondary">A full-stack MERN platform with interactive post management and real-time video conferencing. Socket.io handles WebRTC signaling for seamless media sharing and video calls.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0 p-4 pt-0 d-flex gap-2">
-                            <a href="https://social-media-frontend-sigma-two.vercel.app" class="btn btn-light btn-sm">Live demo</a>
-                            <a href="https://github.com/ujjwalkumar14b/Social_Media" class="btn btn-outline-light btn-sm">Code</a>
-                        </div>
+            </section>
+    
+            <section id="achievements" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Achievements</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p>600+ LeetCode Problems Solved</p>
+                                <p>Strengthened proficiency in Data Structures and Algorithms using Python.</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p>Dean's List (Top 1% Rank)</p>
+                                <p>Ranked among top 1% of students at MIET in academics during the academic year 2023–24.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="container py-5">
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold">Technical skills</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <h3 class="h5 fw-bold pb-2 border-bottom border-secondary-subtle">Languages</h3>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill text-bg-light fs-6">Python</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">SQL</span>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h3 class="h5 fw-bold pb-2 border-bottom border-secondary-subtle">Development</h3>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill text-bg-light fs-6">HTML5</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">CSS3</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">JavaScript</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">Bootstrap</span>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h3 class="h5 fw-bold pb-2 border-bottom border-secondary-subtle">Data Science</h3>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill text-bg-light fs-6">NumPy</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">Pandas</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">Matplotlib</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">Seaborn</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">Scikit-Learn</span>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h3 class="h5 fw-bold pb-2 border-bottom border-secondary-subtle">Tools &amp; DevOps</h3>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge rounded-pill text-bg-light fs-6">Git</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">GitHub</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">Jupyter Notebook</span>
-                        <span class="badge rounded-pill text-bg-light fs-6">VS Code</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section id="education" class="container py-5">
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold">Education</h2>
-                </div>
-            </div>
-            <div class="row py-4 border-top border-secondary-subtle">
-                <div class="col-md-3"><p class="fw-semibold">Aug 2023 – Jun 2027</p></div>
-                <div class="col-md-9">
-                    <h3 class="h4 fw-bold">B.Tech in Computer Science &amp; Engineering</h3>
-                    <p class="text-secondary">Meerut Institute of Engineering and Technology</p>
-                </div>
-            </div>
-            <div class="row py-4 border-top border-bottom border-secondary-subtle">
-                <div class="col-md-3"><p class="fw-semibold">Mar 2021 – Jun 2023</p></div>
-                <div class="col-md-9">
-                    <h3 class="h4 fw-bold">Senior Secondary Education in PCM</h3>
-                    <p class="text-secondary">Army Public School (APS), Meerut</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements -->
-        <section id="achievements" class="container py-5">
-            <div class="row mb-5">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold">Achievements</h2>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="border border-secondary rounded-4 p-4 h-100">
-                        <p class="display-4 fw-bold mb-2">600+</p>
-                        <h3 class="h5 fw-bold">LeetCode problems solved</h3>
-                        <p class="text-secondary mb-0">Strengthened proficiency in Data Structures and Algorithms using Python.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="border border-secondary rounded-4 p-4 h-100">
-                        <p class="display-4 fw-bold mb-2">Top 1%</p>
-                        <h3 class="h5 fw-bold">Dean's List</h3>
-                        <p class="text-secondary mb-0">Ranked among the top 1% of students at MIET in academics during the academic year 2023–24.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="container py-5">
-            <div class="bg-white text-black rounded-5 p-5 text-center my-5">
-                <h2 class="display-4 fw-bold">Let's work together</h2>
-                <p class="fs-5 mb-4">Open to data science, machine learning and full-stack opportunities.</p>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="mailto:ujjwalkumar14b@gmail.com" class="btn btn-dark btn-lg px-4">Email me</a>
-                    <a href="https://linkedin.com/in/ujjwalkumar14b" class="btn btn-outline-dark btn-lg px-4">LinkedIn</a>
-                    <a href="https://leetcode.com/u/ujjwalkumar14b" class="btn btn-outline-dark btn-lg px-4">LeetCode</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="container py-4 border-top border-secondary-subtle">
-        <p class="text-center text-secondary mb-0">Built by Ujjwal Kumar © 2026</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            </section>
+        </main>
+        
+        <footer class="mt-5 mb-5">
+            <p class="text-center text-uppercase">Built by Ujjwal Kumar © 2026.</p>
+        </footer>
+    </div>
+    
 </body>
 </html>
