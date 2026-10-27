@@ -2,794 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b1020">
-    <title>Ujjwal Kumar | AI &amp; Machine Learning Engineer</title>
-    <meta name="description" content="Ujjwal Kumar is a computer science engineer focused on AI, data science, machine learning, and building useful products.">
-    <meta name="keywords" content="Ujjwal Kumar, AI/ML Engineer, Data Science, Machine Learning, Portfolio">
-    <meta name="author" content="Ujjwal Kumar">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Ujjwal Kumar | AI &amp; Machine Learning Engineer">
-    <meta property="og:description" content="Computer science engineer building practical AI, data science, and machine learning projects.">
-    <meta property="og:url" content="https://github.com/ujjwalkumar14b">
-    <link rel="icon" href="https://placehold.co/400x400/a3f76b/000000?text=UK"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjwal Kumar Portfolio</title>
+    <meta name="title" content="Ujjwal Kumar Portfolio" />
+    <meta name="description" content="Specialized in Data Science and Machine Learning." />
+    <meta name="keywords" content="Ujjwal Kumar, AI/ML Developer, Data Science, Machine Learning, Portfolio" />
+    <meta name="author" content="Ujjwal Kumar" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/ujjwalkumar14b" />
+    <meta property="og:title" content="Ujjwal Kumar Portfolio" />
+    <meta property="og:description" content="Specialized in Data Science and Machine Learning." />
+    <meta property="og:image" content="https://placehold.co/400x400/FFF/000000?text=UK" />
+    <link rel="icon" href="https://placehold.co/400x400/FFF/000000?text=UK"> 
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     <style>
-        :root {
-            color-scheme: dark;
-            --page: #0b1020;
-            --surface: #11182b;
-            --surface-raised: #151e33;
-            --line: rgba(181, 197, 226, .13);
-            --text: #f4f6fb;
-            --muted: #a1acc1;
-            --accent: #a3f76b;
-            --accent-2: #79e8d2;
-            --heading-font: "Trebuchet MS", "Segoe UI", sans-serif;
+        h1, h2{
+            font-family: "Cormorant Garamond", ui-serif, Georgia, serif;
         }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 6rem;
+        a, p{
+            font-family:'Times New Roman', Times, serif;
+            text-align: justify; 
+            text-justify: inter-word;
         }
-
-        body {
-            min-width: 320px;
-            background:
-                radial-gradient(ellipse at 82% 7%, rgba(88, 119, 193, .14), transparent 30rem),
-                radial-gradient(ellipse at 3% 39%, rgba(70, 156, 132, .08), transparent 28rem),
-                var(--page);
-            color: var(--text);
-            font-family: "Segoe UI", sans-serif;
-            line-height: 1.7;
+        i{
+            color: black;
         }
-
-        a {
-            color: inherit;
+        .navbar{
+            background-color: white;
         }
-
-        .site-nav {
-            border-bottom: 1px solid var(--line);
-            background: rgba(11, 16, 32, .88);
-            backdrop-filter: blur(16px);
+        #hero{
+            min-height: 10rem;
         }
-
-        .navbar-brand {
-            color: var(--text);
-            font-family: var(--heading-font);
-            font-size: 1.15rem;
-            font-weight: 800;
-            letter-spacing: -.04em;
+        .image {
+            border-radius: 50%;
+            height: 3rem;
         }
-
-        .brand-mark {
-            display: inline-grid;
-            width: 2.45rem;
-            height: 2.45rem;
-            margin-right: .55rem;
-            place-items: center;
-            border: 1px solid rgba(163, 247, 107, .4);
-            border-radius: .8rem;
-            background: rgba(163, 247, 107, .1);
-            color: var(--accent);
-            font-size: .8rem;
-            letter-spacing: .02em;
-        }
-
-        .navbar-nav .nav-link {
-            padding: .65rem .85rem;
-            color: var(--muted);
-            font-size: .92rem;
-            transition: color .2s ease;
-        }
-
-        .navbar-nav .nav-link:hover,
-        .navbar-nav .nav-link:focus-visible {
-            color: var(--accent);
-        }
-
-        .navbar-toggler {
-            border-color: var(--line);
-        }
-
-        .navbar-toggler:focus {
-            box-shadow: 0 0 0 .2rem rgba(163, 247, 107, .2);
-        }
-
-        .navbar-toggler-icon {
-            filter: invert(1);
-        }
-
-        .button-primary,
-        .button-outline {
-            display: inline-flex;
-            min-height: 2.9rem;
-            align-items: center;
-            justify-content: center;
-            gap: .55rem;
-            padding: .72rem 1.15rem;
-            border: 1px solid transparent;
-            border-radius: .75rem;
-            font-size: .92rem;
-            font-weight: 700;
-            text-decoration: none;
-            transition: transform .2s ease, background-color .2s ease, border-color .2s ease;
-        }
-
-        .button-primary {
-            background: var(--accent);
-            color: #111a18;
-        }
-
-        .button-primary:hover {
-            transform: translateY(-2px);
-            background: #b5ff85;
-            color: #111a18;
-        }
-
-        .button-outline {
-            border-color: var(--line);
-            background: rgba(255, 255, 255, .025);
-            color: var(--text);
-        }
-
-        .button-outline:hover {
-            transform: translateY(-2px);
-            border-color: rgba(163, 247, 107, .55);
-            color: var(--accent);
-        }
-
-        .hero {
-            position: relative;
-            min-height: min(47rem, calc(100svh - 4.5rem));
-            padding-top: clamp(4rem, 9vw, 8rem);
-            padding-bottom: clamp(4rem, 8vw, 7rem);
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: .6rem;
-            margin-bottom: 1.2rem;
-            color: var(--accent);
-            font-size: .76rem;
-            font-weight: 800;
-            letter-spacing: .18em;
-            text-transform: uppercase;
-        }
-
-        .eyebrow::before {
-            width: 1.7rem;
-            height: 1px;
-            background: currentColor;
-            content: "";
-        }
-
-        .hero h1 {
-            max-width: 12ch;
-            margin-bottom: 1.2rem;
-            font-family: var(--heading-font);
-            font-size: clamp(3.3rem, 8vw, 6.8rem);
-            font-weight: 800;
-            letter-spacing: -.075em;
-            line-height: .98;
-        }
-
-        .hero h1 span {
-            color: var(--accent);
-        }
-
-        .hero-copy {
-            max-width: 34rem;
-            margin-bottom: 1.8rem;
-            color: var(--muted);
-            font-size: clamp(1rem, 2vw, 1.17rem);
-        }
-
-        .hero-copy strong {
-            color: var(--text);
-            font-weight: 600;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            gap: .75rem;
-        }
-
-        .hero-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.4rem;
-            margin-top: 2.6rem;
-            color: var(--muted);
-            font-size: .88rem;
-        }
-
-        .hero-meta strong {
-            display: block;
-            color: var(--text);
-            font-family: var(--heading-font);
-            font-size: 1.45rem;
-            line-height: 1.3;
-        }
-
-        .hero-visual {
-            position: relative;
-            width: min(100%, 26rem);
-            margin-inline: auto;
-            padding: 1rem;
-        }
-
-        .hero-visual::before {
-            position: absolute;
-            z-index: -1;
-            inset: 7% -4% -4% 10%;
-            border: 1px solid rgba(163, 247, 107, .34);
-            border-radius: 2rem;
-            content: "";
-            transform: rotate(5deg);
-        }
-
-        .portrait-frame {
-            overflow: hidden;
-            aspect-ratio: 4 / 5;
-            border: 1px solid rgba(255, 255, 255, .13);
-            border-radius: 1.8rem;
-            background: var(--surface-raised);
-            box-shadow: 0 2rem 5rem rgba(0, 0, 0, .34);
-        }
-
-        .portrait-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 34%;
-        }
-
-        .portrait-caption {
-            position: absolute;
-            right: 0;
-            bottom: 2.4rem;
-            padding: .75rem 1rem;
-            border: 1px solid var(--line);
-            border-radius: .85rem;
-            background: rgba(17, 24, 43, .93);
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
-            color: var(--text);
-            font-size: .83rem;
-            font-weight: 700;
-        }
-
-        .portrait-caption span {
-            margin-right: .35rem;
-            color: var(--accent);
-        }
-
-        .content-section {
-            padding-top: clamp(4rem, 8vw, 6.5rem);
-            padding-bottom: clamp(4rem, 8vw, 6.5rem);
-            border-top: 1px solid var(--line);
-        }
-
-        .section-heading {
-            max-width: 42rem;
-            margin: 0 auto 2.5rem;
-            text-align: center;
-        }
-
-        .section-heading .eyebrow {
-            justify-content: center;
-            margin-bottom: .8rem;
-        }
-
-        .section-heading h2 {
-            margin-bottom: .75rem;
-            font-family: var(--heading-font);
-            font-size: clamp(2rem, 4vw, 3.15rem);
-            font-weight: 800;
-            letter-spacing: -.055em;
-        }
-
-        .section-heading p {
-            margin: 0;
-            color: var(--muted);
-        }
-
-        .experience-list {
-            max-width: 52rem;
-            margin-inline: auto;
-        }
-
-        .experience-item {
-            margin-bottom: .85rem;
-            overflow: hidden;
-            border: 1px solid var(--line);
-            border-radius: 1rem !important;
-            background: var(--surface);
-            color: var(--text);
-        }
-
-        .experience-item .accordion-button {
-            gap: 1rem;
-            padding: 1.2rem 1.35rem;
-            background: transparent;
-            color: var(--text);
-            font-weight: 700;
-            box-shadow: none;
-        }
-
-        .experience-item .accordion-button:not(.collapsed) {
-            color: var(--accent);
-        }
-
-        .experience-item .accordion-button::after {
-            filter: invert(1);
-        }
-
-        .experience-item .accordion-body {
-            padding: 0 1.35rem 1.35rem;
-            color: var(--muted);
-        }
-
-        .project-card {
-            height: 100%;
-            overflow: hidden;
-            border: 1px solid var(--line);
-            border-radius: 1.1rem;
-            background: linear-gradient(145deg, rgba(21, 30, 51, .96), rgba(15, 22, 39, .96));
-            color: var(--text);
-            transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(163, 247, 107, .4);
-            box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, .2);
-        }
-
-        .project-card .card-body {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 1.5rem;
-        }
-
-        .project-index {
-            margin-bottom: 1.15rem;
-            color: var(--accent);
-            font-family: var(--heading-font);
-            font-size: .82rem;
-            font-weight: 800;
-            letter-spacing: .12em;
-        }
-
-        .project-card .card-title {
-            margin-bottom: .7rem;
-            font-family: var(--heading-font);
-            font-size: 1.22rem;
-            font-weight: 750;
-            letter-spacing: -.025em;
-        }
-
-        .project-card .card-text {
-            flex-grow: 1;
-            color: var(--muted);
-            font-size: .94rem;
-        }
-
-        .project-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: .55rem;
+        .list-group-item{
             margin-top: 1rem;
-        }
-
-        .project-links .button-outline {
-            min-height: 2.55rem;
-            padding: .55rem .85rem;
-            font-size: .84rem;
-        }
-
-        .detail-list {
-            overflow: hidden;
-            border: 1px solid var(--line);
-            border-radius: 1rem;
-            background: var(--surface);
-        }
-
-        .detail-item {
-            padding: 1.35rem 1.5rem;
-            border-color: var(--line);
-            background: transparent;
-            color: var(--text);
-        }
-
-        .detail-item:last-child {
-            border-bottom: 0;
-        }
-
-        .detail-item p {
-            margin: 0;
-        }
-
-        .detail-title {
-            font-weight: 700;
-        }
-
-        .detail-subtitle,
-        .detail-date,
-        .detail-description {
-            color: var(--muted);
-        }
-
-        .detail-subtitle {
-            margin-top: .25rem !important;
-        }
-
-        .detail-date {
-            white-space: nowrap;
-            font-size: .9rem;
-        }
-
-        .skill-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 1rem;
-        }
-
-        .skill-card {
-            height: 100%;
-            padding: 1.35rem;
-            border: 1px solid var(--line);
-            border-radius: 1rem;
-            background: var(--surface);
-        }
-
-        .skill-card h3 {
-            margin-bottom: .65rem;
-            color: var(--accent);
-            font-size: .9rem;
-            font-weight: 800;
-        }
-
-        .skill-card p {
-            margin: 0;
-            color: var(--muted);
-            font-size: .94rem;
-        }
-
-        .achievement-card {
-            height: 100%;
-            padding: 1.45rem;
-            border: 1px solid var(--line);
-            border-radius: 1rem;
-            background: var(--surface);
-        }
-
-        .achievement-card h3 {
-            margin-bottom: .55rem;
-            font-family: var(--heading-font);
-            font-size: 1.12rem;
-            font-weight: 750;
-        }
-
-        .achievement-card p {
-            margin: 0;
-            color: var(--muted);
-        }
-
-        .site-footer {
-            padding: 2rem 0;
-            border-top: 1px solid var(--line);
-            color: var(--muted);
-            font-size: .9rem;
-        }
-
-        .site-footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .site-footer p {
-            margin: 0;
-        }
-
-        @media (max-width: 575.98px) {
-            .hero {
-                padding-top: 4rem;
-            }
-
-            .hero-visual {
-                width: min(88%, 21rem);
-                margin-top: 1.6rem;
-            }
-
-            .portrait-caption {
-                right: -.5rem;
-                bottom: 1.5rem;
-            }
-
-            .skill-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .experience-item .accordion-button {
-                padding: 1rem;
-                font-size: .94rem;
-            }
-
-            .experience-item .accordion-body {
-                padding: 0 1rem 1.1rem;
-                font-size: .93rem;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
-                scroll-behavior: auto !important;
-                transition-duration: .01ms !important;
-            }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top" aria-label="Main navigation">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Ujjwal Kumar, home">
-                <span class="brand-mark" aria-hidden="true">UK</span>
-                Ujjwal Kumar
-            </a>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg sticky-top border-bottom border-secondary">
+            <a href="#"><img class="image" src="https://avatars.githubusercontent.com/u/164533721?v=4"></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavigation" aria-controls="siteNavigation" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="siteNavigation">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-                        <a class="button-primary" href="https://linkedin.com/in/ujjwalkumar14b" target="_blank" rel="noopener noreferrer">Let’s connect <span aria-hidden="true">↗</span></a>
-                    </li>
+                <ul class="navbar-nav ms-auto mb-2">
+                    <li class="nav-item"><a class="nav-link" href="https://linkedin.com/in/ujjwalkumar14b">LinkedIn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://leetcode.com/u/ujjwalkumar14b">LeetCode</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/ujjwalkumar14b">GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:ujjwalkumar14b@gmail.com">Email</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
+            </div> 
+        </nav>
 
-    <main>
-        <section class="hero container" id="home">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-7 order-2 order-lg-1">
-                    <p class="eyebrow">AI &amp; Machine Learning Engineer</p>
-                    <h1>Curious mind.<br><span>Practical AI.</span></h1>
-                    <p class="hero-copy">I’m a computer science engineer exploring the space between <strong>data, intelligent systems,</strong> and products that solve real problems.</p>
-                    <div class="hero-actions">
-                        <a class="button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
-                        <a class="button-outline" href="mailto:ujjwalkumar14b@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
-                    </div>
-                    <div class="hero-meta" aria-label="Portfolio highlights">
-                        <div><strong>05</strong>Featured projects</div>
-                        <div><strong>700+</strong>LeetCode problems</div>
-                        <div><strong>AI/ML</strong>Core focus</div>
-                    </div>
-                </div>
-                <div class="col-lg-5 order-1 order-lg-2">
-                    <div class="hero-visual">
-                        <div class="portrait-frame">
-                            <img src="Photo.png" alt="Portrait of Ujjwal Kumar" fetchpriority="high">
-                        </div>
-                        <div class="portrait-caption"><span aria-hidden="true">✳</span>Building with data &amp; code</div>
-                    </div>
+        <section id="hero" class="mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>UJJWAL KUMAR</h1>
+                    <i>Data Scientist and Machine Learning Engineer</i>
                 </div>
             </div>
         </section>
 
-        <section class="content-section" id="experience">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Where I’ve learned</p>
-                    <h2>Experience</h2>
-                    <p>Turning coursework into hands-on experience across data science, machine learning, and full-stack development.</p>
-                </div>
-                <div class="accordion accordion-flush experience-list" id="experienceAccordion">
-                    <div class="accordion-item experience-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#experienceOne" aria-expanded="true" aria-controls="experienceOne">
-                                AI-ML Intern · Codomax Digital Solutions <span class="ms-auto me-3 text-nowrap small">Jul 2026 – Aug 2026</span>
-                            </button>
-                        </h3>
-                        <div id="experienceOne" class="accordion-collapse collapse show" data-bs-parent="#experienceAccordion">
-                            <div class="accordion-body">I engineered an end-to-end time-series forecasting pipeline for 80 quarterly power-consumption observations (2001–2020) using Python, Pandas, and Statsmodels, generating eight-quarter out-of-sample forecasts. I performed time-series EDA, rolling-window analysis, seasonal decomposition, and ADF stationarity testing (p=0.9986), and implemented Holt-Winters exponential smoothing with additive trend and quarterly seasonality.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item experience-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experienceTwo" aria-expanded="false" aria-controls="experienceTwo">
-                                Data Science Intern · AISECT LEARN <span class="ms-auto me-3 text-nowrap small">Nov 2025 – Jan 2026</span>
-                            </button>
-                        </h3>
-                        <div id="experienceTwo" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
-                            <div class="accordion-body">I identified user-segment dynamics by clustering users into four behavioral groups using unsupervised K-Means. I identified a 59.1% churn rate in the High-Risk Spenders segment with supervised Logistic Regression models and delivered behavioral insights to inform user-retention strategies.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item experience-item">
-                        <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#experienceThree" aria-expanded="false" aria-controls="experienceThree">
-                                Full Stack Developer Intern · EduSkills Foundation <span class="ms-auto me-3 text-nowrap small">Jul 2026 – Aug 2026</span>
-                            </button>
-                        </h3>
-                        <div id="experienceThree" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
-                            <div class="accordion-body">I engineered responsive full-stack web applications using HTML5, CSS3, JavaScript, and Bootstrap. I developed RESTful APIs with Python and Flask, designed relational schemas in MySQL, built authentication with password hashing and session control, and created an interactive student-management system with full CRUD capabilities.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section" id="projects">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">Selected work</p>
-                    <h2>Projects with purpose</h2>
-                    <p>A few things I’ve built while exploring machine learning, data, and product development.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-xl-4">
-                        <article class="card project-card">
-                            <div class="card-body">
-                                <span class="project-index">01 / RECOMMENDATION</span>
-                                <h3 class="card-title">Product Recommendation System</h3>
-                                <p class="card-text">Developed a hybrid model with 95.30% personalization accuracy, combining popularity-based, collaborative, and content-based filtering with Explainable AI. Addressed 97.68% user-item sparsity across a 300K+ customer purchase dataset.</p>
-                                <div class="project-links">
-                                    <a class="button-outline" href="https://github.com/ujjwalkumar14b/Recommendation" target="_blank" rel="noopener noreferrer">Source code ↗</a>
-                                    <a class="button-outline" href="https://recommend-m0mw.onrender.com" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="card project-card">
-                            <div class="card-body">
-                                <span class="project-index">02 / PRICING</span>
-                                <h3 class="card-title">Ride Fare Dynamic Pricing</h3>
-                                <p class="card-text">Designed a ride-sharing price prediction model that incorporates real-time supply and demand, customer loyalty profiles, time of day, location categories, and vehicle types—not just trip duration.</p>
-                                <div class="project-links">
-                                    <a class="button-outline" href="https://github.com/ujjwalkumar14b/Dynamic_Pricing" target="_blank" rel="noopener noreferrer">Source code ↗</a>
-                                    <a class="button-outline" href="https://dynamic-pricing-p5o.onrender.com" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="card project-card">
-                            <div class="card-body">
-                                <span class="project-index">03 / CLASSIFICATION</span>
-                                <h3 class="card-title">Credit Card Fraud Detection</h3>
-                                <p class="card-text">Built an XGBoost model for highly imbalanced transaction data, with Haversine-based spatial feature engineering, class-imbalance handling, and model serialization.</p>
-                                <div class="project-links">
-                                    <a class="button-outline" href="https://github.com/ujjwalkumar14b/Credit_Card_Fraud_Detection" target="_blank" rel="noopener noreferrer">Source code ↗</a>
-                                    <a class="button-outline" href="https://credit-card-fraud-detection-v4m8.onrender.com" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="card project-card">
-                            <div class="card-body">
-                                <span class="project-index">04 / NLP</span>
-                                <h3 class="card-title">Text Summarizer</h3>
-                                <p class="card-text">Engineered an extractive summarization app using NLTK. It accepts text or .txt files, removes stop words and punctuation, and scores sentences by word frequency to generate concise summaries.</p>
-                                <div class="project-links">
-                                    <a class="button-outline" href="https://github.com/ujjwalkumar14b/Text_Summarizer" target="_blank" rel="noopener noreferrer">Source code ↗</a>
-                                    <a class="button-outline" href="https://text-summarizer-jkym.onrender.com" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <article class="card project-card">
-                            <div class="card-body">
-                                <span class="project-index">05 / FULL STACK</span>
-                                <h3 class="card-title">Social Media Application</h3>
-                                <p class="card-text">Developed a full-stack MERN social platform with interactive post management and real-time video conferencing, using Socket.io for WebRTC signaling.</p>
-                                <div class="project-links">
-                                    <a class="button-outline" href="https://github.com/ujjwalkumar14b/Social_Media" target="_blank" rel="noopener noreferrer">Source code ↗</a>
-                                    <a class="button-outline" href="https://social-media-frontend-sigma-two.vercel.app" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section" id="education">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">The foundations</p>
-                    <h2>Education</h2>
-                </div>
+        <main>
+            
+            <section id="experience" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Experience</h2>
                 <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <ul class="list-group list-group-flush detail-list">
-                            <li class="list-group-item detail-item">
-                                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+                    <div class="col-lg-8">
+                        <p>As AI-ML Intern at Codomax Digital Solutions from Jul 2026 – Aug 2026, I engineered an end-to-end Time Series Forecasting pipeline for 80 quarterly power-consumption observations (2001–2020) utilizing Python, Pandas, and Statsmodels, generating 8-quarter out-of-sample forecasts to support energy-demand prediction. I performed extensive time-series EDA, rolling-window analysis, seasonal decomposition, and ADF stationarity testing (p=0.9986) and also implemented Holt-Winters Exponential Smoothing with additive trend and quarterly seasonality to optimize prediction metrics.</p>
+                            
+                        <p>As Data Science Intern at AISECT LEARN from Nov 2025 – Jan 2026, I identified user segment dynamics by clustering users into 4 distinct behavioral groups using unsupervised K-Means Clustering. I identified a 59.1% churn rate in the High-Risk Spenders segment by developing supervised predictive models using Logistic Regression. And delivered actionable behavioral insights for business strategies to increase user retention.</p>
+                        
+                        <p>As Full Stack Developer Intern at EduSkills Foundation from Jul 2026 – Aug 2026, I engineered responsive full-stack web applications using HTML5, CSS3, JavaScript and Bootstrap. I developed RESTful APIs using Python (Flask) and establishing optimized relational schemas in MySQL. I built a robust authentication system featuring secure password hashing, session control, and user access validation. Streamlined administrative data operations by constructing an interactive student management system featuring full CRUD capability.</p>
+                    </div>
+                </div>
+            </section>
+                        
+            <section id="projects" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Projects</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p>(<a href="https://github.com/ujjwalkumar14b/Recommendation">Code</a> | <a href="https://recommend-m0mw.onrender.com">Live Demo</a>) Product Recommendation System: Developed a hybrid model with 95.30% personalization accuracy, combining Time Aware Popularity-Based, User-based and Item-based Collaborative, and Content-Based Filtering with Explainable AI. Addressed 97.68% user-item sparsity on a 300K+ customer purchase dataset.</p>
+    
+                        <p>(<a href="https://github.com/ujjwalkumar14b/Dynamic_Pricing">Code</a> | <a href="https://dynamic-pricing-p5o.onrender.com">Live Demo</a>) Ride Fare Dynamic Pricing System: Designed a dynamic price prediction model for a ride-sharing service. The system goes beyond basic trip duration pricing by incorporating real-time supply-demand dynamics, customer loyalty profiles, time of day, location categories, and vehicle types.</p>
+    
+                        <p>(<a href="https://github.com/ujjwalkumar14b/Credit_Card_Fraud_Detection">Code</a> | <a href="https://credit-card-fraud-detection-v4m8.onrender.com">Live Demo</a>) Credit Card Fraud Detection: Built a detection model utilizing XGBoost to identify fraudulent credit card transactions in heavily imbalanced datasets. Includes spatial feature engineering via Haversine formula, class imbalance handling, and model serialization.</p>
+                                   
+                        <p>(<a href="https://github.com/ujjwalkumar14b/Text_Summarizer">Code</a> | <a href="https://text-summarizer-jkym.onrender.com">Live Demo</a>) Text Summarizer: Engineered a web application that performs extractive text summarization using the NLTK library. It analyzes input text or uploaded .txt files, removes stop words and punctuation, and scores sentences based on word frequency to generate concise summaries.</p>
+
+                        <p>(<a href="https://github.com/ujjwalkumar14b/PDF-Based_RAG_Chatbot">Code</a> | <a href="https://github.com/ujjwalkumar14b/PDF-Based_RAG_Chatbot">Live Demo</a>) A Retrieval-Augmented Generation (RAG) application for uploading PDF documents and asking questions about their content. The application extracts and chunks PDF text, finds relevant passages with vector search, and uses Groq to generate context-aware answers.</p>
+                                  
+                        <p>(<a href="https://github.com/ujjwalkumar14b/Social_Media">Code</a> | <a href="https://social-media-frontend-sigma-two.vercel.app">Live Demo</a>) Social Media Application: Developed a full-stack MERN social media platform featuring interactive post management and real-time video conferencing, enabling seamless media sharing and video interactions by implementing Socket.io for real-time WebRTC signaling.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Education</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
                                     <div>
-                                        <p class="detail-title">B.Tech in Computer Science &amp; Engineering</p>
-                                        <p class="detail-subtitle">Meerut Institute of Engineering and Technology</p>
+                                        <p>B.Tech in Computer Science & Engineering</p>
+                                        <p>Meerut Institute of Engineering and Technology</p>
                                     </div>
-                                    <p class="detail-date">Aug 2023 – Jun 2027</p>
+                                    <p>Aug 2023 - Jun 2027</p>
                                 </div>
                             </li>
-                            <li class="list-group-item detail-item">
-                                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+                            <li class="list-group-item">
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
                                     <div>
-                                        <p class="detail-title">Senior Secondary Education in PCM</p>
-                                        <p class="detail-subtitle">Army Public School (APS), Meerut</p>
+                                        <p>Senior Secondary Education in PCM</p>
+                                        <p>Army Public School (APS), Meerut</p>
                                     </div>
-                                    <p class="detail-date">Mar 2021 – Jun 2023</p>
+                                    <p>Mar 2021 - Jun 2023</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="content-section" id="skills">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">My toolkit</p>
-                    <h2>Technical skills</h2>
-                </div>
+            </section>
+    
+            <section id="skills" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Technical Skills</h2>
                 <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="skill-grid">
-                            <article class="skill-card"><h3>Languages</h3><p>Python, SQL</p></article>
-                            <article class="skill-card"><h3>Development</h3><p>HTML5, CSS3, JavaScript, Bootstrap</p></article>
-                            <article class="skill-card"><h3>Data science</h3><p>NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn</p></article>
-                            <article class="skill-card"><h3>Tools &amp; DevOps</h3><p>Git, GitHub, Jupyter Notebook, VS Code</p></article>
-                        </div>
+                    <div class="col-lg-8">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><p>Languages: Python, HTML5, CSS3, JavaScript, SQL.</p></li>
+                            <li class="list-group-item"><p>Data Science: NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn, PyTorch.</p></li>
+                            <li class="list-group-item"><p>Tools: Git, GitHub, Jupyter Notebook, Google Colab, Visual Studio Code.</p></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="content-section" id="achievements">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow">A few milestones</p>
-                    <h2>Achievements</h2>
-                </div>
-                <div class="row justify-content-center g-3">
-                    <div class="col-md-6 col-lg-5">
-                        <article class="achievement-card">
-                            <h3>700+ LeetCode problems solved</h3>
-                            <p>Strengthened my proficiency in data structures and algorithms using Python.</p>
-                        </article>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <article class="achievement-card">
-                            <h3>Dean’s List · Top 1%</h3>
-                            <p>Ranked among the top 1% of MIET students academically during 2023–24.</p>
-                        </article>
+            </section>
+    
+            <section id="achievements" class="mt-5">
+                <h2 class="text-uppercase text-center mt-5">Achievements</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><p>Solved 700+ LeetCode Problems, strengthening proficiency in Data Structures and Algorithms using Python.</p></li>
+                            <li class="list-group-item"><p>Ranked among top 1% of students at MIET in academics (Dean's List) during the academic year 2023–24.</p></li>
+                            <li class="list-group-item"><p>Completed 3 internships in AI-ML, Data Science and Full Stack Development, gaining hands-on experience.</p></li>
+                            <li class="list-group-item"><p>Built 15+ projects in Data Science and AI-ML, solving real-world problems through data-driven solutions.</p></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
-            <p>Designed &amp; built by Ujjwal Kumar · © 2026</p>
-            <a href="mailto:ujjwalkumar14b@gmail.com">Say hello ↗</a>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+            </section>
+        </main>
+        
+        <footer>
+            <section class="mt-5 row justify-content-center">
+                <div class="col-lg-8 d-flex flex-column flex-sm-row justify-content-between align-items-sm-center text-center">
+                    <p>Built by Ujjwal Kumar</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </section>   
+        </footer>
+    </div>
+    
 </body>
 </html>
